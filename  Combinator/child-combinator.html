@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        section>div>div:first-of-type>p:nth-last-child(3){
+            color: red;
+        }
+        section>div>div:first-of-type>p:last-child{
+            color: orange;
+        }
+        section>div>div:first-of-type>:nth-child(3){
+            color: dodgerblue;
+        }
+        section>div>div:last-child>ol>li:nth-child(2){
+            color: darkmagenta;
+        }
+        section>div>div:last-child>ol>li:nth-child(3)>ul>li:nth-child(2){
+            color: darkgreen;
+        }
+        main>div>div:last-child>p:first-line{
+            color: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>Welcome CSS</h1>
+        <div>
+            <h3>Hello</h3>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div>
+                <h3>Tech pack</h3>
+                <ol>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>
+                        JS
+                        <ul>
+                            <li>Topic 01</li>
+                            <li>Topic 02</li>
+                            <li>Topic 03</li>
+                            <li>Topic 04</li>
+                            <li>Topic 05</li>
+                        </ul>
+                    </li>
+                    <li>TS</li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+        <div>
+            <div>
+                <h3>Topic</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam aperiam architecto blanditiis debitis eum facilis hic ipsa laboriosam minima
+                    praesentium quia, quo, ratione recusandae sequi similique suscipit temporibus unde veniam
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
