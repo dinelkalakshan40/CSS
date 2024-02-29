@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+
+    <link rel="stylesheet" href="/assets/normalize.css">
+
+    <style>
+
+        /*Without the CSS box-sizing Property*/
+        #div1{
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            background-color: lightblue;
+            border: 5px red solid;
+
+        }
+        /*With the CSS box-sizing Property*/
+        #div2{
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            border: 2px solid #d27411;
+
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+
+</body>
+</html>
