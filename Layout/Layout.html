@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        section{
+            width: 1000px;
+            height: 500px;
+            background-color:yellow ;
+            display: grid;  /*create default-6rows grid*/
+            grid-template-columns:1fr 1fr 1fr 1fr ;
+            grid-template-rows:1fr 1fr  ;
+
+        }
+        section>div{
+            border: #1ea68d solid 2px;
+            background-color: #ff00dd;
+        }
+        section>div:first-child{
+            background-color: blue;
+        }
+        section>div:nth-child(2){
+            background-color: #c52e2e;
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+
+
+
+
+
+    </section>
+
+</body>
+</html>
