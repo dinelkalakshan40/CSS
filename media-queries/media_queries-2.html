@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/all.min.css">
+    <style>
+        main{
+            max-width: 800px;
+            /*background: pink;*/
+            margin: auto;
+
+        }
+        #section1{
+            display: flex;
+            justify-content: space-between;
+        }
+        #section1>div{
+            width: 200px;
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #section1>div>span {
+            color: #ff253a;
+            font-size: 20px;
+        }
+        #section1>div>p{
+            color: #14dcbb;
+        }
+        #section2{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            background: pink;
+        }
+        #section2>div{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            background-image: url("https://st.depositphotos.com/1000152/1909/i/450/depositphotos_19091863-stock-photo-forest.jpg");
+            background-size:cover ;
+            background-position:center ;
+            background-repeat: no-repeat;
+        }
+
+        @media all and (max-width: 650px) {
+            #section2 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #section2>div {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        @media all and (max-width: 400px) {
+            #section2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #section2>div {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+    <section id="section1">
+        <div>
+            <h3>Vision</h3>
+            <span>
+                <i class="fa-solid fa-eye"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </span>
+        </div>
+        <div>
+            <h3>Mission</h3>
+            <span>
+                <i class="fa-solid fa-rocket"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h3>Values</h3>
+            <span>
+                <i class="fa-solid fa-gem"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+    </section>
+
+    <section id="section2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </section>
+    </main>
+
+</body>
+</html>
