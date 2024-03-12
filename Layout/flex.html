@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      div{
+        height: 500px;
+        background: deeppink;
+        display: flex;
+        /*flex-direction: row;*/
+        flex-direction: column;
+        /*flex-direction: row-reverse;*/
+        /*flex-direction: column-reverse;*/
+
+        /*justify-content: space-around;*/
+        /*justify-content: flex-start;*/
+        /*justify-content: center;*/
+        /*justify-content: flex-end;*/
+        justify-content: space-around;
+      }
+      div>div{
+        width: 100px;
+        aspect-ratio: 1/1;
+        border: 1px solid red;
+      }
+      div>div:first-child{
+        background: #0dbb73;
+
+      }
+      div>div:nth-child(2){
+        background: #d27411;
+      }
+      div>div:nth-child(3){
+        background: #14dcbb;
+      }
+    </style>
+</head>
+<body>
+      <div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+
+</body>
+</html>
