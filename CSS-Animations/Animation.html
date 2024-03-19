@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            animation-name: my-animation;
+            animation-duration:2s ;
+            animation-fill-mode:forwards ;
+            animation-timing-function:  ease-in;   /*speed of animation*/
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+
+        }
+        @keyframes my-animation {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateY(400px);
+            }
+        }
+        #div2{
+            width: 100px;
+            height: 100px;
+
+            background-color: #0dbb73;
+            animation: animation-2 4s  infinite;
+        }
+        @keyframes animation-2 {
+            from{
+                background-color: #c52e2e;
+            }
+            to{
+               background-color: #d27411;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+    <div id="div2"></div>
+
+</body>
+</html>
