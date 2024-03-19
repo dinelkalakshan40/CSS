@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>transform-01</title>
     <style>
+        body{
+            height: 500px;
+            perspective: 100px ;  /*use 3d effect*/
+        }
         div{
             width: 100px;
             aspect-ratio: 1/1;
@@ -19,11 +23,20 @@
             transition: 1s all;
         }
 
-        div:hover{
-           /* transform: rotate(40deg);*/
+       /* div:hover{
+           !* transform: rotate(40deg);*!
             transform: scale(2,4);
             transform: translateX(50px);
+        }*/
+        div:hover{
+            transition: 2s;
+            /*transform: translate(400px)rotate(45deg);*/
+            /*transform: translate(400px,300px);*/
+
+            /*use 3d effect*/
+            transform: rotateY(45deg);
         }
+
     </style>
 </head>
 <body>
